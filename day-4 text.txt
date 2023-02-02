@@ -1,0 +1,139 @@
+day-4 -text
+
+using zip:-
+
+l1=['a','b','c']
+l2=[1,2,3,]
+
+d={a:b for (a,b) in zip(l1,l2)}
+print(d)
+{'a': 1, 'b': 2, 'c': 3}
+
+
+using the comment symbols:-
+
+n="""today 'class' is so intresting"""
+n
+"today 'class' is so intresting"
+m="""today 'class' is so intresting and was "playing" in the class"""
+m
+'today \'class\' is so intresting and was "playing" in the class'
+p= '''bhardwaj is using "mobile"in the class'''
+p
+'bhardwaj is using "mobile"in the class'
+
+type of strings functions:-
+the string we taken s="pavan"
+
+s.upper(): it convert the  given string into uppercase.
+>>> print(s.upper())
+PAVAN
+
+s.lower(): it convert the  given string into lowercase.
+>>> print(s.lower())
+pavan
+
+s.captalisize:it convert the first letter of the string into upper case.
+>>> print(s.capitalize())
+Pavan
+
+s.split():we can split the given string
+>>> print(s.split())
+['pavan']
+s.replace()--replacing one letter with another letter
+ 
+s.strip()
+s.center()
+s.count('a')
+s.count('a',5,len(s))
+s.islower()-->>>CHECKING  ALL LETTERS IS IN SMALL LETTERS ,IF IT IS IT PRINTS "True"
+print(s.islower())
+True
+
+s.isupper()-->>>CHECKING  ALL LETTERS IS IN CAPITAL LETTERS ,IF IT IS IT PRINTS "True"
+print(s.isupper())
+False
+
+s.istitle()-->>>CHECKING  ONLY FIRST  LETTER IS IN CAPITAL LETTER ,IF IT IS IT PRINTS "True"
+print(s.istitle())
+False
+
+max(s)
+min(s)
+s.rfind
+max("abc") is c
+min("abc") is a
+
+mutable and immutable:-
+
+mutable:-it can change after the creation
+*list
+*dictionary
+*sets
+immutable:- it can't change once it created
+
+*int
+a=10
+a
+10
+id(a)
+2482639667728
+a=20
+id(a)
+2482639668048
+
+*float
+b=1.2
+id(b)
+2482675443792
+b=3.8
+id(b)
+2482675443600
+
+*string
+c="pavan"
+id(c)
+2482676756464
+c="bharadwaj"
+id(c)
+2482676817456
+
+*boolean
+*tuple
+
+
+#math module:-
+import math
+
+print("ceil 12.5:", math.ceil(12.5))
+ceil 12.5: 13
+
+print("floor 12.5:", math.floor(12.5))
+floor 12.5: 12
+
+print("sqrt 345:", math.sqrt(345))
+sqrt 345: 18.57417562100671
+
+print("factorial 4:", math.factorial(4))
+factorial 4: 24
+
+print("power 4,5:", math.pow(4,5))
+power 4,5: 1024.0
+
+print("remainder 4,5:", math.fmod(4,5))
+remainder 4,5: 4.0
+
+a,b=divmod(1,12)
+print(a,b)
+0 1
+
+
+
+
+
+ 
+
+
+
+
+
