@@ -1,0 +1,235 @@
+program1:-
+l=["hyd","kakinada","vizag","guntur"]
+c=[]
+for i in l:
+    if "n" in i:
+        c.append(i)
+print(c)
+
+l1=[3**x for x in range (2,10)]
+print(l1)
+
+output:-
+['kakinada', 'guntur']
+[9, 27, 81, 243, 729, 2187, 6561, 19683]
+
+
+
+
+program2:-
+size=int(input("enter a size"))
+l=[]
+for i in range(size) :
+    new_user=int(input("enter a number"))
+    l.append(new_user)
+print(l)
+
+product=1
+for i in range (len(l)):
+    product=product*l[i]
+print(product)
+    
+sum=0
+for i in range (len(l)):
+    sum=sum+l[i]
+    print(sum)
+    
+if product<750:
+    print(product)
+else:
+    print(sum)
+output:-
+enter a size3
+enter a number1
+enter a number2
+enter a number6
+[1, 2, 6]
+12
+1
+3
+9
+12
+
+
+# model 2
+
+n=list(map(int,input("enter a number:").strip().split()))
+product=1
+sum=0
+for i in range(len(n)):
+    product=product*n[i]
+    sum=sum+n[i]
+if product<750 :
+    print(product)
+else:
+    print(sum)
+
+output:-
+enter a number:1 2 3
+6
+
+
+program3:-
+
+l=[1.2,3.2,4.5,2.7,29.3]
+sum=0.0
+for i in range(len(l)):
+    sum+=l[i]
+    avg=sum/len(l)
+print(sum)
+print(avg)
+
+output:-
+40.900000000000006
+8.180000000000001    
+
+
+program4:-(string using)
+
+s={1,2,3,4}
+s
+{1, 2, 3, 4}
+s.add(5)
+s
+{1, 2, 3, 4, 5}
+s.update([6,7])
+s
+{1, 2, 3, 4, 5, 6, 7}
+s.discard(3)
+s
+{1, 2, 4, 5, 6, 7}
+s.remove(2)
+s
+{1, 4, 5, 6, 7}
+
+
+s1={3,4,5,6,7}
+s2={1,2,3,4,5}
+s1|s2
+{1, 2, 3, 4, 5, 6, 7}
+s1&s2
+{3, 4, 5}
+s1-s2
+{6, 7}
+s2-s1
+{1, 2}
+{1, 2}
+{1, 2}
+type(s1)
+<class 'set'>
+ss={1,2,3,4,5,1,2,3
+ss
+    
+{1, 2, 3, 4, 5}
+print(s1.symmetric_difference(s2))
+    
+{1, 2, 6, 7}
+s1.issuperset(s2)
+    
+False
+t=(1,2,3,4,"pavan")
+    
+t
+    
+(1, 2, 3, 4, 'pavan')
+t=(1,2,3,4,"pavan")
+
+t.index(4)
+    
+3
+t.count(4)
+    
+1
+d={1:"pavan",2:"icecream"}
+    
+d
+    
+{1: 'pavan', 2: 'icecream'}
+
+d.keys()
+...     
+dict_keys([1, 2])
+>>> d.values()
+...     
+dict_values(['pavan', 'icecream'])
+
+program5:-
+
+size=int(input("enter a size"))
+l=[]
+for i in range(size):
+    new_user=int(input("enter a element"))
+    l.append(new_user)
+print(l)
+#even number
+for j in l:
+    if(j%2==0):
+        print(j)
+output:-
+enter a size6
+enter a element1
+enter a element3
+enter a element5
+enter a element6
+enter a element8
+enter a element9
+[1, 3, 5, 6, 8, 9]
+6
+8
+
+
+
+program6:-
+
+l=[1,2,3,4,5,6,7,8,9,21]
+for i in range(len(l)):
+    print(l[i])
+
+output:-
+1
+2
+3
+4
+5
+6
+7
+8
+9
+21
+
+program7:-
+
+import random
+n=random.randrange(1,50)
+guess=int(input("guess the number"))
+while n!=guess:
+    if guess<n:
+        print("LOW")  
+        guess=int(input("guess the number"))
+    elif guess>n:
+        print("HIGH")  # guess is high according to system  gues : 33--->20 system --> print high
+        guess=int(input("guess the number"))
+    else:
+        break
+print("guess is correct")
+
+output:-
+guess the number12
+LOW
+guess the number20
+HIGH
+guess the number15
+guess is correct
+
+
+program8:-
+
+n= int(input("enter number : "))
+if n%2==0 and n%5==0:
+    print("num is dividible by 2 and 5")
+else:
+    print("NOT dividible by 2 and 5")
+
+output:-
+enter number : 24
+NOT dividible by 2 and 5
