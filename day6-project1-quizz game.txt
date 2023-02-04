@@ -1,0 +1,152 @@
+#project-1-quiz game
+
+q1="""find out the india's national animal
+a.tiger
+b.lion
+c.lepoard
+d.elephant"""
+
+q2="""who is the prime minster of the india
+a.modi
+b.jagan
+c.chandrababu
+d.amithsha"""
+
+q3=""" who is the humable person
+a.elon musk
+b.ratnam tata
+c.ambani
+d.bill gates"""
+
+q4="""who is the famous player in the kabaddi
+a.rahul
+b.anudeep
+c.sandeep
+d.kudeep"""
+
+q5="""what is the curreny of the india
+a.rupees
+b.dollars
+c.pounds
+d.ringetes"""
+
+q6="""what is the cheapest bike
+a.hondashine
+b.tvs
+c.royal enfield
+d.splendar"""
+
+q7="""what is the best place in kkd
+a.beach
+b.srmt mall
+c.parks
+d. eatstreet"""
+questions={q1:"a",q2:"a",q3:"b",q4:"a",q5:"a",q6:"b",q7:"a"}
+name=input("enter your name")
+print("hello",name,"welcome to the quiz")
+score=0
+for i in questions:
+    print()
+    print(i)
+    mind1=input("do u want to skip the question(yes/no):")
+    if mind1=="yes":
+        continue
+    ans=input("enter your answer:")
+    if ans==questions[i]:
+        print(" wow!you got the one point")
+        score=score+1
+        print("your current score is :",score)
+    else:
+        print("wrong answer,u lost the 1 point")
+        print(" wow!you got the one point")
+        score=score-1
+        print("your current score is :",score)
+
+    mind2=input("do u want to quit the quiz(yes/no):")
+    if mind2=="yes":
+        break
+print("you have scored",score)
+
+output:-
+hello bharadwaj welcome to the quiz
+
+find out the india's national animal
+a.tiger
+b.lion
+c.lepoard
+d.elephant
+do u want to skip the question(yes/no):no
+enter your answer:a
+ wow!you got the one point
+your current score is : 1
+do u want to quit the quiz(yes/no):no
+
+who is the prime minster of the india
+a.modi
+b.jagan
+c.chandrababu
+d.amithsha
+do u want to skip the question(yes/no):no
+enter your answer:a
+ wow!you got the one point
+your current score is : 2
+do u want to quit the quiz(yes/no):no
+
+ who is the humable person
+a.elon musk
+b.ratnam tata
+c.ambani
+d.bill gates
+do u want to skip the question(yes/no):no
+enter your answer:a
+wrong answer,u lost the 1 point
+ wow!you got the one point
+your current score is : 1
+do u want to quit the quiz(yes/no):no
+
+who is the famous player in the kabaddi
+a.rahul
+b.anudeep
+c.sandeep
+d.kudeep
+do u want to skip the question(yes/no):no
+enter your answer:b
+wrong answer,u lost the 1 point
+ wow!you got the one point
+your current score is : 0
+do u want to quit the quiz(yes/no):no
+
+what is the curreny of the india
+a.rupees
+b.dollars
+c.pounds
+d.ringetes
+do u want to skip the question(yes/no):no
+enter your answer:a
+ wow!you got the one point
+your current score is : 1
+do u want to quit the quiz(yes/no):no
+
+what is the cheapest bike
+a.hondashine
+b.tvs
+c.royal enfield
+d.splendar
+do u want to skip the question(yes/no):no
+enter your answer:b
+ wow!you got the one point
+your current score is : 2
+do u want to quit the quiz(yes/no):no
+
+what is the best place in kkd
+a.beach
+b.srmt mall
+c.parks
+d. eatstreet
+do u want to skip the question(yes/no):no
+enter your answer:a
+ wow!you got the one point
+your current score is : 3
+do u want to quit the quiz(yes/no):no
+you have scored 3
+

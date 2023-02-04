@@ -1,0 +1,27 @@
+#project 2 -timer clock
+import time
+def countdown(t):
+    while t:
+        mins,secs=divmod(t,60)
+        timer='{:02d}:{:02d}'.format(mins,secs)
+        print(timer)
+        time.sleep(1)
+        t-=1
+    print("finshed")
+t=int(int(input("enter the time in second:")))
+countdown(int(t))
+
+output:-
+enter the time in second:10
+00:10
+00:09
+00:08
+00:07
+00:06
+00:05
+00:04
+00:03
+00:02
+00:01
+finshed
+

@@ -1,0 +1,87 @@
+day-6(text)
+
+title exception handling:-
+when there is except the developer does not want interception  in the program flpw to this we are using the execption handling.
+
+we should use the captail first letter after writting the except.
+
+
+oops(object oriented programing structure):-
+
+it is an efficient concept,used inobject orirented lang like java,python.
+for multiple reasons be use theoops concept
+for example:
+code reusability,data security,hidden data
+
+class:-
+it's ablue print
+ex:-
+birds,laptops,mobiles
+
+object:-
+it a thing created based on the class 
+note:
+one class can have multiple objects
+
+ex1:-
+class bird
+object-peacock,parrot,crane
+class laptop
+object- hp,dell,lenova,macbook
+
+ex:-
+class bird:
+    def config(self):
+        print("yes")
+peacock=bird()
+peacock.config()
+
+parrot=bird()
+parrot.config()
+ 
+output:-
+yes
+yes
+
+using constructors:-
+ex:-
+class Employee:
+    def __init__(self,name,id):
+       self.id=id
+       self.name=name
+    def display(self):
+       print(self.id,self.name)
+emp1=Employee("pavan",101)
+emp2=Employee("revanth",102)
+
+emp1.display()
+emp2.display()
+
+output:-
+101 pavan
+102 revanth
+
+variables in class and method
+
+class Computer():
+    a=10
+    b=20
+    print("class variable inside the class",a)
+    def config(self):
+        c=100
+        print("yes")
+        print("isinstance",self.b)
+lenova=Computer()
+print(lenova.a)
+print(lenova.a,lenova.b)
+dell=Computer()
+print("dell",dell.a)
+lenova.config()
+
+output:-
+class variable inside the class 10
+10
+10 20
+dell 10
+yes
+isinstance 20

@@ -1,0 +1,66 @@
+day6-programs
+
+program1:-
+
+a=100
+b=0
+try:
+    print(a/b)
+
+except Exception as e:
+    print("please note ,number cant be divided by zero",e)
+
+print("bye")
+ 
+output:-
+please note ,number cant be divided by zero division by zero
+bye
+
+program2:-
+a=100
+b=0
+
+try:
+    print("resource open")
+    print(a//b)
+except Exception as e:
+    print("don't give sedond no as zero",e)
+finally:
+    print("resourced closed")
+
+output:-
+resource open
+don't give sedond no as zero integer division or modulo by zero
+resourced closed
+
+program3:-
+a=10
+try:
+    b=int(input("enter a number:"))
+    print("resource open")
+    print(a/b)
+except ZeroDivisionError as e:
+    print("please note,number cant be divided by zero")
+except ValueError as e:
+    print("type of the input must be integer")
+except Exception as e:
+    print("is is other error")
+finally:
+    print("resource closed")
+
+output:-
+enter a number:2
+resource open
+5.0
+resource closed
+
+program4:-
+x=10
+if x%2!=0:
+    raise Exception ("x should be the even number")
+else:
+    print("x is even number...correct")
+
+output:-
+x is even number...correct	`
+
