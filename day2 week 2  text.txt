@@ -1,0 +1,72 @@
+polymorphism
+one item or same item used for the different purposes
+
+1)over loading:-
+a) operator over loading
+b) method over loading
+
+example for the operator overloading
+5+10=15
+"5"+"10"=510
+
+example for the method overloading
+
+class moverload:
+    def display(self,a=None,b=None):
+        print(a,b)
+obj=moverload()
+print("without arguments")
+obj.display()
+
+print("with all arguments")
+obj.display(20,30)
+
+print("with one argument")
+obj.display(10)
+
+output:
+without arguments
+None None
+with all arguments
+20 30
+with one argument
+10 None
+
+
+2)overriding:-
+if method is defective or can't be use inside derived class it will taken from its baseclass or parent class
+
+
+******************************************DATA STRUCTURES*****************************************************
+
+HELPS TON WRITE THE EFFICIENT PROGRAM
+LINEAR-ARRAY/LINKED LIST/STACK/QUEUE/MATRIX
+NON LINEAR-BINARY TREE/HEAP/HASH TABLE/GRAPH
+LINEAR-STORING DATA SEQUENTIALLY
+NON LINEAR-STORING THE  DATA NON SEQUENTIALLY.
+
+
+*static-array
+*dynamic-list,stack,queue.
+
+LINKED LIST
+realtime exam train
+as the name says list of items which are linked  with one another is called as linked list.
+
+TYPES
+1) singly
+2) doubly
+3) circular
+
+creating  linked list:-
+steps:-
+*create the node.
+*partion the node with two segments data and none.
+*add value into the blank node.
+*mark the node as head.
+*create the next node by following the above steps.
+*establish link between the first node and the second node.
+ 
+DISPLAYING THE LINKED LIST:-
+* traversal is required from the first node till tail node in order to display existing linked list
+
